@@ -1,0 +1,10 @@
+load voz_256m.txt;
+x1 = voz_256m';
+Fs = 8000;
+N = 256;
+t = (1000/Fs)*(1:N);
+plot(t, x1);
+title('x1(n)');
+xlabel('mseg');
+ylabel('mV');
+grid;
